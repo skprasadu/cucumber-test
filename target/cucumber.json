@@ -1,0 +1,248 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 24,
+        "name": "Verify 10% offer",
+        "description": "",
+        "id": "evaluate-percentage;verify-10%-offer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 92532284,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Execute DiscountService Business",
+            "match": {
+              "location": "DiscountServiceTest.execute_DiscountService_Business()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1221912,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "if i will enter 5001",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5001",
+                  "offset": 16
+                }
+              ],
+              "location": "DiscountServiceTest.if_i_will_enter(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 867625,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "we should get ten percentage discount",
+            "match": {
+              "location": "DiscountServiceTest.we_should_get_ten_percentage_discount()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Verify 15% offer",
+        "description": "",
+        "id": "evaluate-percentage;verify-15%-offer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18537,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Execute DiscountService Business",
+            "match": {
+              "location": "DiscountServiceTest.execute_DiscountService_Business()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54238,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "if i will enter 11000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11000",
+                  "offset": 16
+                }
+              ],
+              "location": "DiscountServiceTest.if_i_will_enter(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12922,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "we should get fifteen percentage discount",
+            "match": {
+              "location": "DiscountServiceTest.we_should_get_fifteen_percentage_discount()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Verify No offer",
+        "description": "",
+        "id": "evaluate-percentage;verify-no-offer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14155,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Execute DiscountService Business",
+            "match": {
+              "location": "DiscountServiceTest.execute_DiscountService_Business()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61293,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "if i will enter 4000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4000",
+                  "offset": 16
+                }
+              ],
+              "location": "DiscountServiceTest.if_i_will_enter(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18874,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "we shouldn\u0027t get any percentage",
+            "match": {
+              "location": "DiscountServiceTest.we_shouldn_t_get_any_percentage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Evaluate percentage",
+    "description": "",
+    "id": "evaluate-percentage",
+    "keyword": "Feature",
+    "uri": "offer.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]
